@@ -6,10 +6,12 @@ set(CMAKE_CXX_STANDARD 23)
 set(SOURCES
         main.cpp
         src/ArcGraph.cpp
-        src/IGraph.cpp)
+        src/IGraph.cpp
+        src/ListGraph.cpp)
 
 set(HEADERS
         include/ArcGraph.h
-        include/IGraph.h)
+        include/IGraph.h
+        include/ListGraph.h)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCES} ${HEADERS})
