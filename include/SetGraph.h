@@ -7,26 +7,28 @@
 #include <set>
 #include <vector>
 
-class SetGraph : public IGraph {
-public:
-    explicit SetGraph(int size);
+namespace cgraphs {
+    class SetGraph : public IGraph {
+    public:
+        explicit SetGraph(int size);
 
-    explicit SetGraph(const IGraph& graph);
+        explicit SetGraph(const IGraph &graph);
 
-    ~SetGraph() = default;
+        ~SetGraph() = default;
 
-    void AddEdge(int from, int to) override;
+        void AddEdge(int from, int to) override;
 
-    size_t VerticesCount() const override;
+        size_t VerticesCount() const override;
 
-    std::vector<int> GetNextVertices(int vertex) const override;
+        std::vector<int> GetNextVertices(int vertex) const override;
 
-    std::vector<int> GetPrevVertices(int vertex) const override;
+        std::vector<int> GetPrevVertices(int vertex) const override;
 
-    void Display() const noexcept override;
-private:
-    std::vector< std::set<int> > _adjacencyMatrix;
-};
+        void Display() const noexcept override;
 
+    private:
+        std::vector<std::set<int> > _adjacencyMatrix;
+    };
+}
 
 #endif //IGRAPH_SETGRAPH_H
