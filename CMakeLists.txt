@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.31)
-project (Graph LANGUAGES CXX VERSION 1.0 DESCRIPTION "Библиотека для работы с графами")
+project (cgraphs LANGUAGES CXX VERSION 1.0 DESCRIPTION "Библиотека для работы с графами")
 
 set(CMAKE_CXX_STANDARD 23)
 
