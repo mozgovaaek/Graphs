@@ -21,5 +21,7 @@ namespace cgraphs {
     void topologicalSortInternal(const IGraph &graph, int vertex, std::vector<bool> &visited, std::deque<int> &sorted);
 
     std::deque<int> topologicalSort(const IGraph &graph);
+
+    std::vector<int> dijkstra(const IGraph& graph, int start);
 }
 #endif //IGRAPH_ALGORITHMS_H

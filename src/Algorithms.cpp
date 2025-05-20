@@ -70,4 +70,29 @@ namespace cgraphs {
         }
         return sorted;
     }
+
+    std::vector<int> dijkstra(const IGraph& graph, int start) {
+        std::vector<int> dist(graph.VerticesCount(), std::numeric_limits<int>::max());
+        std::vector<bool> visited(graph.VerticesCount(), false);
+        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> pq;
+
+        dist[start] = 0;
+        pq.emplace(0, start);
+
+        while (!pq.empty()) {
+            int u = pq.top().second;
+            pq.pop();
+
+            if (visited[u]) continue;
+            visited[u] = true;
+
+            for (const auto& v : graph.GetNextVertices(u)) {
+                if (dist[u] + 1 < dist[v]) {
+                    dist[v] = dist[u] + 1;
+                    pq.emplace(dist[v], v);
+                }
+            }
+        }
+        return dist;
+    }
 }
