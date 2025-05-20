@@ -19,5 +19,7 @@ git submodule add git@github.com:mozgovaaek/Graphs.git
 
 ## Авторы
 Мозговая Екатерина Владимировна
+
 Ткачев Макар Владимирович
+
 ИПМбд-02-23
