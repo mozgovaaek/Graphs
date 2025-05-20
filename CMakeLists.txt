@@ -7,11 +7,13 @@ set(SOURCES
         main.cpp
         src/ArcGraph.cpp
         src/IGraph.cpp
-        src/ListGraph.cpp)
+        src/ListGraph.cpp
+        src/MatrixGraph.cpp)
 
 set(HEADERS
         include/ArcGraph.h
         include/IGraph.h
-        include/ListGraph.h)
+        include/ListGraph.h
+        include/MatrixGraph.h)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCES} ${HEADERS})
