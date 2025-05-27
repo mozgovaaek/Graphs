@@ -17,6 +17,9 @@ git submodule add git@github.com:mozgovaaek/Graphs.git
 3. `Topological Sort`
 4. `Dijkstra`
 
-## Автор
+## Авторы
 Мозговая Екатерина Владимировна
+
+Ткачев Макар Владимирович
+
 ИПМбд-02-23
