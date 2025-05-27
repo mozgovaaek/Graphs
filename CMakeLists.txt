@@ -10,6 +10,7 @@ set(SOURCES
         src/ListGraph.cpp
         src/MatrixGraph.cpp
         src/SetGraph.cpp
+        main.cpp
         )
 
 set(HEADERS

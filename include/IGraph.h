@@ -33,7 +33,7 @@ namespace cgraphs {
         virtual std::vector<int> GetNextVertices(int vertex) const = 0;
 
         /**
-         * Получение вектора вершин, откуда можео попасть в заданную.
+         * Получение вектора вершин, откуда можно попасть в заданную.
          * @param vertex[in]: куда идём.
          * @return вектор вершин, откуда можно попасть в vertex.
          */
